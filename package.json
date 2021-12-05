@@ -1,0 +1,19 @@
+{
+  "name": "noahbankston_hw5_csi2520_fs2021",
+  "version": "1.0.0",
+  "description": "homework 5",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index",
+    "dev": "nodemon index"
+  },
+  "keywords": [
+    "express"
+  ],
+  "author": "noahbankston",
+  "license": "ISC",
+  "dependencies": {
+    "ejs": "^3.1.6",
+    "express": "^4.17.1"
+  }
+}

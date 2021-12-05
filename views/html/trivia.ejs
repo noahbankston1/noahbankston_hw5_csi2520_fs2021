@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <link rel="stylesheet" href="public/css/indexstyling.css">
+        
+        <title>
+            Noah Bankston Portfolio
+        </title>
+
+        <link rel="shortcut icon" type="image/png" href="public/img/twitch.png">
+
+    </head>
+
+    <body>
+
+        <ul>
+            <li><a href="/">Home Page</a></li>
+            <li><a href="/my_resume">Resume</a></li>
+            <li><a href="/my_fun_facts">Fun Facts</a></li>
+            <li><a href="/trivia">Trivia</a></li>
+        </ul>
+
+
+        <h1>Trivia</h1>
+    <h2>What game has the best eSports? (Opinion)</h2><br>
+    <input type="radio" name="question1" id="correct1">CS:GO<br>
+    <input type="radio" name="question1">League of Legends<br>
+    <input type="radio" name="question1">Farming Simulator<br>
+    <input type="radio" name="question1">Dota 2<br>
+
+    <h2>Should you play League of Legends?</h2><br>
+    <input type="radio" name="question2">Yes<br>
+    <input type="radio" name="question2" id="correct2">No<br>
+
+    <h2>How many classes are in Destiny 2?</h2><br>
+    <input type="radio" name="question3">1<br>
+    <input type="radio" name="question3">2<br>
+    <input type="radio" name="question3" id="correct3">3<br>
+    <input type="radio" name="question3">4<br>
+
+    <h2>What is the final raid in Classic World of Warcraft?</h2><br>
+    <input type="radio" name="question4">Molten Core<br>
+    <input type="radio" name="question4">Onyxia's Lair<br>
+    <input type="radio" name="question4">AQ40<br>
+    <input type="radio" name="question4" id="correct4">Naxxramas<br>
+
+    <h2>Who is the greatest Counter Strike player of all time?</h2><br>
+    <input type="radio" name="question5" id="correct5">s1mple<br>
+    <input type="radio" name="question5">KennyS<br>
+    <input type="radio" name="question5">PashaBiceps<br>
+    <input type="radio" name="question5">Stewie2k<br>
+
+
+    <br><input type="submit" name="submit" value="Check Results" onclick="result()">
+
+    <script type="text/javascript">
+        function result() {
+            var score=0;
+            if (document.getElementById('correct1').checked) {
+                score++;
+            }
+            if (document.getElementById('correct2').checked) {
+                score++;
+            }
+            if (document.getElementById('correct3').checked) {
+                score++;
+            }
+            if (document.getElementById('correct4').checked) {
+                score++;
+            }
+            if (document.getElementById('correct5').checked) {
+                score++;
+            }
+            alert("Your score is: "+score);
+
+        }
+
+
+    </script>
+
+
+        <hr>
+
+        <footer>
+            &copy; 2021, nbankston@oakland.edu
+        </footer>
+
+    </body>
+
+
+
+
+</html>
